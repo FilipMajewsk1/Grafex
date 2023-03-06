@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller">
+    <MenuBar blendMode="DARKEN" layoutY="1.0" maxWidth="1.7976931348623157E308" prefHeight="27.0" prefWidth="643.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+        <Menu mnemonicParsing="false" text="Plik">
+            <MenuItem mnemonicParsing="false" onAction="#otworz" text="Otwórz graf" />
+            <MenuItem mnemonicParsing="false" onAction="#zapisz" text="Zapisz graf jako" />
+            <MenuItem mnemonicParsing="false" onAction="#zamknij" text="Zamknij" />
+        </Menu>
+        <Menu mnemonicParsing="false" text="Graf">
+         <MenuItem mnemonicParsing="false" onAction="#generuj" text="Generuj graf" />
+            <MenuItem mnemonicParsing="false" onAction="#czysc" text="Czyść graf" />
+            <MenuItem mnemonicParsing="false" onAction="#wybierz" text="Wybierz/wyczyść punkty ścieżki" />
+        </Menu>
+        <Menu mnemonicParsing="false" text="Widok">
+            <MenuItem mnemonicParsing="false" onAction="#skala" text="Zmień skalę kolorów" />
+        </Menu>
+    </MenuBar>
+    <ScrollPane fx:id="pane" layoutX="-3.0" layoutY="27.0" prefHeight="529.0" prefWidth="643.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0" />
+   <ProgressBar fx:id="progressBar" layoutX="429.0" layoutY="5.0" prefWidth="200.0" progress="0.0" visible="false" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="5.0" />
+</AnchorPane>
